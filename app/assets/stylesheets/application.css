@@ -217,6 +217,7 @@ h2.call_to_action a {
 }
 .hl_es h2.call_to_action a {
 	background-image: url(/assets/send_and_buy.es.png);
+  width: 219px;
 }
 
 h2#buy_socks a {
