@@ -68,8 +68,8 @@
         #all_tweets
           -@tweets.each do |tweet|
             .tweet.span5
-              =link_to "http://twitter.com/#{tweet["from_user"]}/status/#{tweet["id_str"]}", :target => '_blank' do
-                =image_tag tweet["profile_image_url"], :class=>"twitter_profile_image"
-                %span.twitter_username=tweet["from_user"]
+              =link_to "http://twitter.com/#{tweet["user"]["screen_name"]}/status/#{tweet["id_str"]}", :target => '_blank' do
+                =image_tag tweet["user"]["profile_image_url"], :class=>"twitter_profile_image"
+                %span.twitter_username=tweet["user"]["screen_name"]
                 =tweet["text"]
       =link_to(">", "javascript:void(0)", :id => "next_tweet")
